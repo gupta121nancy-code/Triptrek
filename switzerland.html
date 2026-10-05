@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Switzerland - TripTrek</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f7f8;
+            color: #333;
+        }
+
+        /* Navigation */
+        nav {
+            background-color: white;
+            padding: 18px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .logo {
+            font-size: 28px;
+            font-weight: bold;
+            color: #00796b;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 25px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+        }
+
+        nav ul li a:hover {
+            color: #00796b;
+        }
+
+        /* Hero */
+        .hero {
+            height: 420px;
+
+            background-image: linear-gradient(
+                rgba(0,0,0,0.35),
+                rgba(0,0,0,0.35)
+            ),
+            url("https://images.unsplash.com/photo-1527668752968-14dc70a27c95?auto=format&fit=crop&w=1600&q=80");
+
+            background-size: cover;
+            background-position: center;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+
+            color: white;
+        }
+
+        .hero h1 {
+            font-size: 55px;
+            margin-bottom: 10px;
+        }
+
+        .hero p {
+            font-size: 20px;
+        }
+
+        /* Main Content */
+        .container {
+            width: 85%;
+            max-width: 1100px;
+            margin: 50px auto;
+        }
+
+        .container h2 {
+            color: #00796b;
+            margin-bottom: 15px;
+            font-size: 30px;
+        }
+
+        .container p {
+            line-height: 1.7;
+            font-size: 17px;
+            margin-bottom: 30px;
+        }
+
+        /* Cards */
+        .cards {
+            display: flex;
+            gap: 25px;
+            flex-wrap: wrap;
+            margin-top: 25px;
+        }
+
+        .card {
+            background: white;
+            padding: 25px;
+            border-radius: 12px;
+            flex: 1;
+            min-width: 250px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+
+        .card h3 {
+            color: #00796b;
+            margin-bottom: 12px;
+        }
+
+        .card ul {
+            padding-left: 20px;
+            line-height: 1.8;
+        }
+
+        /* Buttons */
+        .buttons {
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 13px 25px;
+            margin: 8px;
+            background-color: #00796b;
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: bold;
+        }
+
+        .btn:hover {
+            background-color: #004d40;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #004d40;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav>
+
+        <div class="logo">
+            🌍 TripTrek
+        </div>
+
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="destinations.html">Destinations</a></li>
+            <li><a href="packages.html">Packages</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+
+    </nav>
+
+
+    <!-- Hero Section -->
+    <section class="hero">
+
+        <div>
+
+            <h1>Switzerland</h1>
+
+            <p>The Land of Mountains</p>
+
+        </div>
+
+    </section>
+
+
+    <!-- Main Content -->
+    <div class="container">
+
+        <h2>Discover Switzerland</h2>
+
+        <p>
+            Switzerland is famous for its beautiful mountains, peaceful
+            lakes, charming villages and breathtaking landscapes. It is
+            an ideal destination for nature lovers, adventure seekers
+            and travellers looking for a memorable holiday.
+        </p>
+        <!-- Places to Visit -->
+<h2>🏔️ Places to Visit in Switzerland</h2>
+
+<div class="places">
+
+    <div class="place-card">
+        <img src="https://images.unsplash.com/photo-1527668752968-14dc70a27c95?auto=format&fit=crop&w=800&q=80">
+        <h3>Interlaken</h3>
+        <p>A beautiful town surrounded by mountains, lakes and scenic landscapes.</p>
+    </div>
+
+    <div class="place-card">
+        <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?auto=format&fit=crop&w=800&q=80">
+        <h3>Jungfrau</h3>
+        <p>Discover spectacular mountain scenery in the Swiss Alps.</p>
+    </div>
+
+    <div class="place-card">
+        <img src="https://images.unsplash.com/photo-1529253355930-ddbe423a2ac7?auto=format&fit=crop&w=800&q=80">
+        <h3>Lucerne</h3>
+        <p>Explore this charming city surrounded by mountains and a beautiful lake.</p>
+    </div>
+
+    <div class="place-card">
+        <img src="https://images.unsplash.com/photo-1527668752968-14dc70a27c95?auto=format&fit=crop&w=800&q=80">
+        <h3>Zurich</h3>
+        <p>Discover Switzerland's lively city with culture, history and beautiful views.</p>
+    </div>
+
+</div>
+
+        <!-- Information Cards -->
+        <div class="cards">
+
+
+            <div class="card">
+
+                <h3>📍 Popular Places</h3>
+
+                <ul>
+                    <li>Interlaken</li>
+                    <li>Zurich</li>
+                    <li>Lucerne</li>
+                    <li>Jungfrau</li>
+                    <li>Geneva</li>
+                </ul>
+
+            </div>
+
+
+            <div class="card">
+
+                <h3>🎯 Things to Do</h3>
+
+                <ul>
+                    <li>Explore the Swiss Alps</li>
+                    <li>Enjoy scenic train journeys</li>
+                    <li>Visit beautiful lakes</li>
+                    <li>Go hiking</li>
+                    <li>Explore mountain villages</li>
+                </ul>
+
+            </div>
+
+
+            <div class="card">
+
+                <h3>📅 Best Time to Visit</h3>
+
+                <p>
+                    Switzerland can be visited throughout the year.
+                    Summer is popular for hiking and sightseeing, while
+                    winter is popular for snow and mountain activities.
+                </p>
+
+            </div>
+
+
+        </div>
+
+
+        <!-- Buttons -->
+        <div class="buttons">
+
+            <a href="contact.html" class="btn">
+                Book Your Trip
+            </a>
+
+            <a href="destinations.html" class="btn">
+                ← Back to Destinations
+            </a>
+
+        </div>
+
+    </div>
+
+
+    <!-- Footer -->
+    <footer>
+
+        <p>
+            © 2026 TripTrek | Travel • Explore • Experience
+        </p>
+
+    </footer>
+
+</body>
+</html>
