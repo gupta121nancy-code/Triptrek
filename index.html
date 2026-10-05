@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TripTrek - Explore the World</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f9fc;
+            color: #333;
+        }
+
+        /* Navigation */
+        nav {
+            background-color: #ffffff;
+            padding: 18px 60px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .logo {
+            font-size: 28px;
+            font-weight: bold;
+            color: #008cba;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #333;
+            margin-left: 30px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #008cba;
+        }
+
+        /* Hero Section */
+        .hero {
+            height: 550px;
+            background: linear-gradient(
+                rgba(0,0,0,0.35),
+                rgba(0,0,0,0.35)
+            ),
+            url("https://images.unsplash.com/photo-1500530855697-b586d89ba3ee")
+            center/cover;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: white;
+        }
+
+        .hero h1 {
+            font-size: 55px;
+            margin-bottom: 15px;
+        }
+
+        .hero p {
+            font-size: 22px;
+            margin-bottom: 30px;
+        }
+
+        .btn {
+            background-color: #00a8cc;
+            color: white;
+            padding: 14px 30px;
+            text-decoration: none;
+            border-radius: 25px;
+            font-weight: bold;
+        }
+
+        .btn:hover {
+            background-color: #007f9e;
+        }
+
+        /* Destinations */
+        .destinations {
+            padding: 60px 80px;
+            text-align: center;
+        }
+
+        .destinations h2 {
+            font-size: 35px;
+            margin-bottom: 35px;
+            color: #008cba;
+        }
+
+        .cards {
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            flex-wrap: wrap;
+        }
+
+        .card {
+            width: 300px;
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.12);
+        }
+
+        .card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .card-content {
+            padding: 20px;
+        }
+
+        .card h3 {
+            color: #008cba;
+            margin-bottom: 10px;
+        }
+
+        .card p {
+            line-height: 1.6;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #073b4c;
+            color: white;
+            text-align: center;
+            padding: 25px;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <div class="logo">🌍 TripTrek</div>
+
+        <div>
+            <a href="index.html">Home</a>
+            <a href="destinations.html">Destinations</a>
+            <a href="hotels.html">Hotels</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div>
+            <h1>Explore. Dream. Discover.</h1>
+            <p>Your journey begins with TripTrek.</p>
+            <a href="destinations.html" class="btn">
+                Explore Destinations
+            </a>
+        </div>
+    </section>
+
+    <!-- Popular Destinations -->
+    <section class="destinations">
+
+        <h2>Popular Destinations</h2>
+
+        <div class="cards">
+
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1524492412937-b28074a5d7da">
+                <div class="card-content">
+                    <h3>India</h3>
+                    <p>
+                        Explore India's rich culture, beautiful landscapes,
+                        historical places and delicious food.
+                    </p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1530789253388-582c481c54b0">
+                <div class="card-content">
+                    <h3>Paris</h3>
+                    <p>
+                        Experience the beauty, architecture and romantic
+                        atmosphere of the city of Paris.
+                    </p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1518548419970-58e3b4079ab2">
+                <div class="card-content">
+                    <h3>Bali</h3>
+                    <p>
+                        Discover tropical beaches, beautiful temples and
+                        peaceful surroundings in Bali.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2026 TripTrek | Travel • Explore • Experience</p>
+    </footer>
+
+</body>
+</html>
